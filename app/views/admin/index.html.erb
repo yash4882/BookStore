@@ -1,0 +1,9 @@
+<div class="w-full">
+	<h1 class="mx-auto text-lg font-bold text-4xl">Welcome</h1>
+	<p>
+		It's <%= Time.now %>.
+		We have <%= pluralize(@total_orders, "order") %>
+	</p>
+		<br>
+	 <%= link_to 'Products', store_index_path,class: "inline rounded-lg py-3 px-5 bg-green-600 text-white block font-medium" %>
+</div>
